@@ -1,0 +1,6 @@
+<h1>Article Post</h1>
+{% for article in post %}
+  <ul>
+    <li><a href="{{ article.get_absolute_url }}">{{ article.title }}</a></li>
+  </ul>
+{% endfor %}
